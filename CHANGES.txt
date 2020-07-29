@@ -4,11 +4,15 @@ New in master
 Features
 --------
 
+* Restore ``caps`` typogrify filter (wraps strings of capital letters
+  with ``<span class="caps">`` (via Issue #3405)
 * Added Marathi translation
 
 Bugfixes
 --------
 
+* Don’t run typogrify filters on ``<title>`` tag to avoid adding extra
+  tags(Issue #3405)
 * Fix handling of duplicate plugins on Windows
 * Allow else clause in post-list plugin. (Issue #3436)
 
